@@ -125,6 +125,7 @@ class Ec2PlatformModule extends AbstractAwsPlatformModule implements \Scalr\Modu
                 'c1.medium' =>  ['hvm' => false],
                 'c1.xlarge' =>  ['hvm' => false, 'x64' => true],
             ],
+            'c5'  => ['ebs' => true, 'hvm' => true, 'vpc' => true, 'x64' => true],
             'c4'  => ['ebs' => true, 'hvm' => true, 'vpc' => true, 'x64' => true],
             'c3'  => ['x64' => true],
             'd2'  => ['hvm' => true, 'x64' => true],
@@ -412,6 +413,72 @@ class Ec2PlatformModule extends AbstractAwsPlatformModule implements \Scalr\Modu
                     'size'   => 420
                 ]
             ),
+            'c5.large' => array(
+                'name' => 'c5.large',
+                'ram' => '4096',
+                'vcpus' => '2',
+                'disk' => '',
+                'type' => '',
+                'ebsencryption' => true,
+                'ebsoptimized' => 'default',
+                'placementgroups' => true,
+                'enhancednetworking' => true
+            ),
+            'c5.xlarge' => array(
+                'name' => 'c5.xlarge',
+                'ram' => '8192',
+                'vcpus' => '4',
+                'disk' => '',
+                'type' => '',
+                'ebsencryption' => true,
+                'ebsoptimized' => 'default',
+                'placementgroups' => true,
+                'enhancednetworking' => true
+            ),
+            'c5.2xlarge' => array(
+                'name' => 'c5.2xlarge',
+                'ram' => '16384',
+                'vcpus' => '8',
+                'disk' => '',
+                'type' => '',
+                'ebsencryption' => true,
+                'ebsoptimized' => 'default',
+                'placementgroups' => true,
+                'enhancednetworking' => true
+            ),
+            'c5.4xlarge' => array(
+                'name' => 'c5.4xlarge',
+                'ram' => '32768',
+                'vcpus' => '16',
+                'disk' => '',
+                'type' => '',
+                'ebsencryption' => true,
+                'ebsoptimized' => 'default',
+                'placementgroups' => true,
+                'enhancednetworking' => true
+            ),
+            'c5.9xlarge' => array(
+                'name' => 'c5.9xlarge',
+                'ram' => '73728',
+                'vcpus' => '36',
+                'disk' => '',
+                'type' => '',
+                'ebsencryption' => true,
+                'ebsoptimized' => 'default',
+                'placementgroups' => true,
+                'enhancednetworking' => true
+            ),
+            'c5.18xlarge' => array(
+                'name' => 'c5.18xlarge',
+                'ram' => '147456',
+                'vcpus' => '72',
+                'disk' => '',
+                'type' => '',
+                'ebsencryption' => true,
+                'ebsoptimized' => 'default',
+                'placementgroups' => true,
+                'enhancednetworking' => true
+            ),
 
             'c4.large' => array(
                 'name' => 'c4.large',
@@ -614,6 +681,17 @@ class Ec2PlatformModule extends AbstractAwsPlatformModule implements \Scalr\Modu
                     'number' => 2,
                     'size'   => 320
                 ]
+            ),
+            'r4.2xlarge' => array(
+                'name' => 'r4.2xlarge',
+                'ram' => '62464',
+                'vcpus' => '8',
+                'disk' => '',
+                'type' => '',
+                'ebsencryption' => true,
+                'ebsoptimized' => 'default',
+                'placementgroups' => true,
+                'enhancednetworking' => true,
             ),
 
             'i2.xlarge' => array(
